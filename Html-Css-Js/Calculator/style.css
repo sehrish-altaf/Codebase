@@ -1,57 +1,68 @@
-
-
-/* Style the body to center the content */
 body {
+    background-color: #f3e8f0; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1  {
+    color: #6a1b9a;
     text-align: center;
-    margin: 20px;
-    background-color: #f0f8ff;
+    margin-bottom: 20px;
 }
 
-/* Style the heading */
-h1 {
-    background-color: #f0f8ff;
-}
-
-
-
-
-
-/* Style the display input */
-#display {
-    width: 200px;
-    height: 40px;
-    font-size: 20px;
-    text-align: right;
-    margin-bottom: 10px;
-    background-color: #ffffff;
-}
-
-/* Style the table */
-table {
-    background-color: #e0f0ff;
-    margin: 0 auto;
-    border-collapse: collapse;
-}
-
-
-/* Style the table cells */
-td {
-    padding: 15px;
-    background-color: #f0f8ff;
-}
-
-/* Style the buttons */
-button {
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
-    background-color: #add8e6;
-    border: 2px solid #4682b4;
-    cursor: pointer;
+.calculator {
+    background-color:  #f9f1f9; 
+    width: 300px;
     border-radius: 20px;
-    font-weight: bold;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
-#clear-btn{
-    width: 70px;
+.display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: right;
+    padding: 5px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    padding: 20px ;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px; 
+    background-color: #d1bbe2;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn {
+    background-color: #a569bd; 
+    grid-column: span 2;
+    grid-row: span 2;
+
+}
+
+button:hover {
+    background-color: #c3a7d3; 
+}
+
+button:active {
+    background-color: #ad87ca 
 }
